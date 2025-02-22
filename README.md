@@ -15,8 +15,11 @@ manuscript for QWENDY method: QWENDY.pdf
 major code files:
 
 QWENDY_tutorial.py: a tutorial for using QWENDY, LEQWENDY, TEQWENDY methods 
+
 to apply QWENDY method, it also needs the following files: methods.py
+
 to apply TEQWENDY method, it also needs the following files: methods.py, models.py, weights/teqwendy_1st.pth, weights/teqwendy_2nd.pth
+
 to apply LEQWENDY method, it also needs the following files: methods.py, models.py, weights/config.json, weights/pytorch_model.bin, weights/leqwendy_1st.pth, weights/leqwendy_2nd.pth (the last three not uploaded here)
 
 models.py: contains all models
@@ -60,8 +63,11 @@ folder training_data: from https://figshare.com/articles/software/TRENDY_method_
 example_data.npy: example data set, used for QWENDY_tutorial.py
 
 folder weights: 
+
 config.json: configuration of Roberta large model
+
 pytorch_model.bin: pre-trained weights of Roberta large model (not uploaded here. please download at xxx and put it in this folder)
+
 leqwendy_1st.pth: weights of the first half of LEQWENDY model (not uploaded here. please download at xxx and put it in this folder)
 leqwendy_2nd.pth: weights of the second half of LEQWENDY model (not uploaded here. please download at xxx and put it in this folder)
 teqwendy_1st.pth: weights of the first half of TEQWENDY model
