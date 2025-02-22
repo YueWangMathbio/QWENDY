@@ -12,6 +12,8 @@ please go to xxx to download three large weight files and put them in the 'weigh
 
 manuscript for QWENDY method: QWENDY.pdf
 
+_____________________
+
 major code files:
 
 QWENDY_tutorial.py: a tutorial for using QWENDY, LEQWENDY, TEQWENDY methods 
@@ -26,6 +28,8 @@ models.py: contains all models
 
 methods.py: contains functions for different methods
 
+_____________________
+
 code files for training other models:
 
 train_teqwendy_first_half.py: train the first half of TEQWENDY method. the trained weights teqwendy_1st.pth is in the folder weights
@@ -35,6 +39,8 @@ train_teqwendy_second_half.py: train the second half of TEQWENDY method. the tra
 train_leqwendy_first_half.py: train the first half of LEQWENDY method. the trained weights leqwendy_1st.pth is in the folder weights (not uploaded here)
 
 train_leqwendy_second_half.py: train the second half of LEQWENDY method. the trained weights leqwendy_2nd.pth is in the folder weights (not uploaded here)
+
+_____________________
 
 code files for comparing different methods:
 
@@ -47,6 +53,8 @@ test_THP1.py: used to compare different methods on THP-1 data
 test_hESC.py: used to compare different methods on hESC data
 
 evaluation.py: compare the inferred GRN with the ground truth GRN and calculate AUROC and AUPRC
+
+_____________________
 
 data sets and model weights:
 
@@ -62,6 +70,8 @@ folder training_data: from https://figshare.com/articles/software/TRENDY_method_
 
 example_data.npy: example data set, used for QWENDY_tutorial.py
 
+_____________________
+
 folder weights: 
 
 config.json: configuration of Roberta large model
@@ -69,7 +79,10 @@ config.json: configuration of Roberta large model
 pytorch_model.bin: pre-trained weights of Roberta large model (not uploaded here. please download at xxx and put it in this folder)
 
 leqwendy_1st.pth: weights of the first half of LEQWENDY model (not uploaded here. please download at xxx and put it in this folder)
+
 leqwendy_2nd.pth: weights of the second half of LEQWENDY model (not uploaded here. please download at xxx and put it in this folder)
+
 teqwendy_1st.pth: weights of the first half of TEQWENDY model
+
 teqwendy_2nd.pth: weights of the second half of TEQWENDY model
 
