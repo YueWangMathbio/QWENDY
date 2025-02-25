@@ -8,7 +8,7 @@ TEQWENDY algorithm uses numpy=1.24.3, sklearn=1.4.2, torch=2.2.2
 
 LEQWENDY algorithm uses numpy=1.24.3, sklearn=1.4.2, torch=2.2.2, transformers=4.48.1, peft=0.14.0
 
-please go to xxx to download three large weight files and put them in the 'weights' folder
+please go to https://zenodo.org/records/14927010 to download three large weight files and put them in the 'weights' folder
 
 manuscript for QWENDY method: QWENDY.pdf
 
@@ -76,11 +76,11 @@ folder weights:
 
 config.json: configuration of Roberta large model
 
-pytorch_model.bin: pre-trained weights of Roberta large model (not uploaded here. please download at xxx and put it in this folder)
+pytorch_model.bin: pre-trained weights of Roberta large model (not uploaded here. please download at https://zenodo.org/records/14927010 and put it in this folder)
 
-leqwendy_1st.pth: weights of the first half of LEQWENDY model (not uploaded here. please download at xxx and put it in this folder)
+leqwendy_1st.pth: weights of the first half of LEQWENDY model (not uploaded here. please download at https://zenodo.org/records/14927010 and put it in this folder)
 
-leqwendy_2nd.pth: weights of the second half of LEQWENDY model (not uploaded here. please download at xxx and put it in this folder)
+leqwendy_2nd.pth: weights of the second half of LEQWENDY model (not uploaded here. please download at https://zenodo.org/records/14927010 and put it in this folder)
 
 teqwendy_1st.pth: weights of the first half of TEQWENDY model
 
