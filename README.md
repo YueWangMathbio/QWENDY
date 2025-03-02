@@ -2,6 +2,8 @@
 
 code files for QWENDY, LEQWENDY, TEQWENDY methods, used for inferring gene regulatory networks (GRN) from single-cell gene expression data
 
+the paper is on bioRxiv: https://www.biorxiv.org/content/10.1101/2025.02.22.639640v1.abstract
+
 QWENDY algorithm uses numpy=1.24.3, sklearn=1.4.2
 
 TEQWENDY algorithm uses numpy=1.24.3, sklearn=1.4.2, torch=2.2.2
