@@ -2,9 +2,18 @@
 
 code files for QWENDY, LEQWENDY, TEQWENDY methods, used for inferring gene regulatory networks (GRN) from single-cell gene expression data
 
-the paper is on bioRxiv: https://www.biorxiv.org/content/10.1101/2025.02.22.639640v1.abstract
+to use QWENDY, either use 
+pip install qwendy
+in terminal, or directly download the qwendy.py file
+
+the paper is on arXiv: https://arxiv.org/abs/2503.09605
 
 QWENDY algorithm uses numpy=1.24.3, sklearn=1.4.2
+
+qwendy.py: main function of the QWENDY method
+
+see qwendy_tutorial_new.py for a simple tutorial to use QWENDY
+
 
 TEQWENDY algorithm uses numpy=1.24.3, sklearn=1.4.2, torch=2.2.2
 
@@ -18,9 +27,9 @@ _____________________
 
 major code files:
 
-QWENDY_tutorial.py: a tutorial for using QWENDY, LEQWENDY, TEQWENDY methods 
+QWENDY_tutorial_OLD.py: a tutorial for using QWENDY, LEQWENDY, TEQWENDY methods 
 
-to apply QWENDY method, it also needs the following files: methods.py
+to apply QWENDY method (old), it also needs the following files: methods.py
 
 to apply TEQWENDY method, it also needs the following files: methods.py, models.py, weights/teqwendy_1st.pth, weights/teqwendy_2nd.pth
 
@@ -54,6 +63,10 @@ test_THP1.py: used to compare different methods on THP-1 data
 
 test_hESC.py: used to compare different methods on hESC data
 
+test_mESC.py: used to compare different methods on mESC data
+
+test_hESC_100_qwendy.py: used to test QWENDY on the 100-gene hESC data set
+
 evaluation.py: compare the inferred GRN with the ground truth GRN and calculate AUROC and AUPRC
 
 _____________________
@@ -66,7 +79,11 @@ folder DREAM4: GRNs and corresponding expression data from https://www.synapse.o
 
 folder THP1: GRN (THP1_A.npy) and corresponding expression data (THP1_data.npy) from https://link.springer.com/article/10.1186/gb-2013-14-10-r118
 
-folder hESC: GRN (hESC_A.npy) and corresponding expression data (hESC_data....npy for six time points) from https://link.springer.com/article/10.1186/s13059-016-1033-x
+folder hESC: 18 genes, GRN (hESC_A.npy) and corresponding expression data (hESC_data....npy for six time points) from https://link.springer.com/article/10.1186/s13059-016-1033-x
+
+folder hESC_100: 100 genes, GRN (hESC_A.npy) and corresponding expression data (hESC_data....npy for six time points) from https://link.springer.com/article/10.1186/s13059-016-1033-x
+
+folder mESC: GRN (mESC_new_A.npy) and corresponding expression data (mESC_new_data....npy for five time points) from https://www.nature.com/articles/s41467-018-02866-0
 
 folder training_data: from https://figshare.com/articles/software/TRENDY_method_code_files/28236074, dataset_xx with a number xx means training data; dataset_val means validation data. _A is ground truth GRN; _Kdata is covariance matrix; _Kstar is revised covariance matrix K*; _leqwendyA is the inferred GRN by the first half of LEQWENDY; _teqwendyA is the inferred GRN by the first half of TEQWENDY; _xdata is mean expression level
 
